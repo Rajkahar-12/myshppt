@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: myshppt
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: AI_MODEL
+        value: meta-llama/llama-3.3-70b-instruct:free
+      - key: OPENROUTER_API_KEY
+        sync: false

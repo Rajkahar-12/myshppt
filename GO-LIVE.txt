@@ -1,0 +1,15 @@
+GO LIVE IN 5 STEPS (free)
+
+1. Go to github.com -> New repository -> name it  myshppt  -> Create.
+2. Click "uploading an existing file". Open this extracted folder, select ALL files
+   and folders inside it (app.py, templates, static, render.yaml ...) and drag them in.
+   Click Commit changes.
+3. Go to render.com -> sign in with GitHub -> New -> Blueprint -> pick the myshppt repo.
+4. Render asks for OPENROUTER_API_KEY. Paste your key from openrouter.ai/keys. Click Apply.
+5. Wait 3-5 minutes. Your live link appears at the top, like https://myshppt.onrender.com
+   Share that link with everyone.
+
+Notes:
+- Free Render sleeps after 15 min of no visitors; the first visit then takes ~1 minute.
+- If the AI shows an error, change AI_MODEL in Render -> Environment to another ":free" model.
+- To test on your own PC first, double-click run.bat
